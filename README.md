@@ -5,7 +5,7 @@ Install
 go get github.com/kristakoch/foody
 ```
 
-Run
+Run with env vars in place as
 ```
 foody
 ```
