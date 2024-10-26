@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"log"
 	"os/exec"
-	"strings"
 )
 
 const (
@@ -87,7 +86,7 @@ func (r recipe) longString() error {
 
 	fmt.Println("")
 
-	if strings.HasSuffix(r.imageURL, ".jpg") {
+	if "" != r.imageURL {
 		cmd := exec.Command("jp2a", "--width=40", r.imageURL)
 		var out bytes.Buffer
 		cmd.Stdout = &out
